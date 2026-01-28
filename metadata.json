@@ -1,0 +1,8 @@
+{
+  "name": "RaveTok - The Old Skool Network",
+  "description": "A TikTok-style social platform for old skool rave heads, featuring multi-source music discovery, curated libraries, and DJ/Label spaces.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

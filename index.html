@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>RaveTok</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Bungee&display=swap" rel="stylesheet">
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <style>
+      :root {
+        --rave-pink: #ff00ff;
+        --rave-cyan: #00ffff;
+        --rave-green: #39ff14;
+      }
+      body {
+        font-family: 'Space Grotesk', sans-serif;
+        background-color: #000;
+        color: #fff;
+        overflow: hidden;
+        height: 100dvh;
+      }
+      .rave-font {
+        font-family: 'Bungee', cursive;
+      }
+      .vhs-effect::after {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+        z-index: 2;
+        background-size: 100% 2px, 3px 100%;
+        pointer-events: none;
+      }
+      ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      .safe-pb {
+        padding-bottom: env(safe-area-inset-bottom);
+      }
+      .safe-pt {
+        padding-top: env(safe-area-inset-top);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
